@@ -1,4 +1,4 @@
-﻿package TaskGeometry;
+﻿package Figures;
 
 public class Square extends Figure{
     public int side;
@@ -17,3 +17,4 @@ public class Square extends Figure{
         return side*side;
     }
 }
+

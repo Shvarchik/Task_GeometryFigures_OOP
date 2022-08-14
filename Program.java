@@ -7,9 +7,8 @@
 // Массив фигур в программе должен быть представлен как массив объектов этого базового класса. 
 // Массив фигур должен создаваться и вся работа с ним идёт внутри main. 
 
-package TaskGeometry;
-
 import java.util.ArrayList;
+import Figures.*;
 
 public class Program {
     
@@ -26,4 +25,3 @@ public class Program {
         }
     }
 }
-

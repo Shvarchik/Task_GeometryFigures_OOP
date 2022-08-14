@@ -1,4 +1,4 @@
-﻿package TaskGeometry;
+﻿package Figures;
 
 public class Rectangle extends Figure{
 
@@ -19,6 +19,4 @@ public class Rectangle extends Figure{
     public double area() {
         return side1*side2;
     }
-    
-    
 }

@@ -1,4 +1,4 @@
-﻿package TaskGeometry;
+﻿package Figures;
 
 public class Circle extends Figure{
     public int radius;
