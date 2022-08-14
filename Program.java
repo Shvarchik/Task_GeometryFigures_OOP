@@ -8,7 +8,6 @@
 // Массив фигур должен создаваться и вся работа с ним идёт внутри main. 
 
 package TaskGeometry;
-//import TaskGeometry.*;
 
 import java.util.ArrayList;
 
