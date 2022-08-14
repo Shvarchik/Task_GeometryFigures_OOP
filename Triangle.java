@@ -31,3 +31,4 @@ public class Triangle extends Figure{
         return Math.sqrt(p * (p - this.side1) * (p - this.side2) * (p - this.side3));
     }
 }
+
