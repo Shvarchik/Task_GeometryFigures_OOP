@@ -11,17 +11,37 @@ import java.util.ArrayList;
 import Figures.*;
 
 public class Program {
+
+    static void allPerimetres(ArrayList<Figure> figures){
+        int i=1;
+        for (Figure item:figures) {
+            if (item instanceof Circle)
+                System.out.printf("%d. Длина окружности: %.2f\n", i++, ((Circle) item).circumference ());
+            else System.out.printf("%d. Периметр: %.2f\n", i++, ((Perimeter)item).perimeter());
+        }
+    }
+
+    static void allAreas (ArrayList<Figure> figures){
+        int i=1;
+        for (Figure item:figures) {
+            System.out.printf("%d. Площадь: %.2f\n", i++, item.area());
+        }
+    }
     
     public static void main(String[] args) {
         
         ArrayList <Figure> figures = new ArrayList<>();
+        try {
         figures.add(new Circle(5));
-        figures.add(new Square(10));
+        figures.add(new Square(8));
         figures.add(new Rectangle(3,5));
         figures.add(new Triangle(5,6,7));
-        for (Figure item:figures){
-            System.out.printf("Площадь: %.2f, Периметр: %.2f\n", item.area(), item.perimeter());
-            
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
         }
+        allPerimetres(figures);
+        System.out.println();
+        allAreas(figures);
+        
     }
 }
